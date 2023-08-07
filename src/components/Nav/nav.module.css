@@ -1,0 +1,41 @@
+@import '../../fonts.css';
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 5px;
+    padding-inline:450px;
+    background-color: rgba(0,0,0,.9);
+}
+.logo{
+    background-color: white;
+    height: 30px;
+    width: 90px;
+}
+.nav_list{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.btn{
+    color: white;
+    height: 40px;
+    width: 95px;
+    padding-block: 5px;
+    background-color: rgb(50, 187, 50);
+    border: none;
+    border-radius: 5px;
+}
+.list_item,.btn{
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.list_item{
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+}
+.div{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
