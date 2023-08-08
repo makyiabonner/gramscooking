@@ -1,6 +1,7 @@
-import styles from './App.css';
+import styles from './App.module.css';
 import Nav from './components/Nav/nav';
 import Hero from './components/Hero/hero';
+import Button from './components/Button/button';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <div className={styles.other_recipes}>
           <span className={styles.subtitle_span}>CHECK THIS</span>
           <h2 className={styles.subtitle_h2}>Other recipes</h2>
-          <button className={styles.red_button}>Show all</button>
+          <Button type='dark' content='Show all'/>
         </div>
       </section>
     </>

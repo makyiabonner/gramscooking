@@ -1,0 +1,23 @@
+.span,.title,.details{
+    width: fit-content;
+}
+.span{
+    font-family:'Poppins';
+    color: red;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+.title_light,.title_dark{
+    font-family: 'Merriweather';
+    font-weight: bolder;
+    font-size: 40px;
+    margin-block: 25px;
+}
+.title_light,.details_light{
+    color:white;
+}
+.details_light,.details_dark{
+    font-weight: 300;
+    width: 500px;
+    line-height: 25px;
+}

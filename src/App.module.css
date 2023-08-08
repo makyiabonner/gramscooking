@@ -1,0 +1,27 @@
+@import './fonts.css';
+
+.span{
+  font-family:'Poppins';
+  color: red;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.title{
+  font-family: 'Merriweather';
+  font-weight: bolder;
+  font-size: 40px;
+  margin-block: 25px;
+}
+.section{
+  width: 100%;
+  background-image: url('../public/images/background-pic.jpg');
+}
+.other_recipes{
+  background: url('../public/images/other-recipes-pic.jpg');
+  margin: auto;
+  border-radius: 10px;
+  background-position: center;
+  padding: 6em;
+  background-color: red;
+  width: 50%;
+}
