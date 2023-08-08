@@ -1,0 +1,40 @@
+
+.container{
+    background-image: url('/public/images/hero_bg.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.div{
+    margin-inline: auto;
+    background-color: transparent;
+    padding-block: 150px;
+    width: 60%;
+}
+.span,.title,.details{
+    width: fit-content;
+}
+.span{
+    font-family:'Poppins'
+}
+.span{
+    color: red;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+.title{
+    font-family: 'Merriweather';
+    font-weight: bolder;
+    font-size: 40px;
+    margin-block: 25px;
+}
+.details{
+    font-weight: 300;
+    width: 500px;
+    line-height: 25px;
+}
+.two_buttons{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+}

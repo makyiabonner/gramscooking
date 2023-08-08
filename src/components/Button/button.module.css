@@ -1,0 +1,28 @@
+
+.red_button,.light_button{
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5) inset;
+}
+.red_arrow,.light_arrow{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-inline: 20px;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+}
+.p{
+    font-size: 16px;
+    font-weight: 100;
+    padding-inline: 20px;
+    width: 100px;
+}
+.red_button{
+    color: white;
+    background-color: rgb(240, 0, 0);
+}
+.light_button{
+    color: #555555;
+}

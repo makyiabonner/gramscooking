@@ -3,7 +3,7 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    padding-block: 5px;
+    padding-block: 14px;
     padding-inline:450px;
     background-color: rgba(0,0,0,.9);
 }
@@ -28,7 +28,6 @@
 }
 .list_item,.btn{
     font-family: 'Poppins';
-    font-weight: bold;
 }
 .list_item{
     color: rgb(190, 190, 190);
