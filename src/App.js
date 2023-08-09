@@ -50,6 +50,21 @@ function App() {
           <Button type='dark' content='Show all'/>
         </div>
       </section>
+      <section className={styles.natural_products_section}>
+        <div>
+          <TitleLayout
+            type='light'
+            span_content='ABOUT US'
+            title_content1='Natural products and'
+            title_content2='aromatic spices'
+            details='Curabitur sed iaculis dolor, non congue ligula. Maecenas imperdiet ante eget hendrerit posuere. Nunc urna libero, congue porta nibh a, semper feugiat sem. Sed auctor dui eleifend, scelerisque eros ut, pellentesque nibh. Nam lacinia suscipit accumsan.'
+          />
+          <div className={styles.two_buttons}>
+            <Button type='dark' content='Read more'/>
+            <Button type='light' content='Our catering'/>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

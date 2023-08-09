@@ -50,3 +50,18 @@
   margin-bottom: 3em;
   width: 60%;
 }
+.natural_products_section{
+  background-image: url('../public/images/products&spices-bg.jpg');
+  padding-block: 8em;
+}
+.natural_products_section div:first-child{
+  width: 60%;
+  padding-bottom: 6em;
+  margin: auto;
+  border-bottom:1px solid rgba(255,255,255,.2);
+}
+.two_buttons{
+  display: flex;
+  margin-top: 30px;
+  gap: 20px;
+}
