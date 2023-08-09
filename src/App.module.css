@@ -1,11 +1,5 @@
 @import './fonts.css';
 
-.span{
-  font-family:'Poppins';
-  color: red;
-  font-size: 13px;
-  letter-spacing: 2px;
-}
 .title{
   font-family: 'Merriweather';
   font-weight: bolder;
@@ -15,13 +9,43 @@
 .section{
   width: 100%;
   background-image: url('../public/images/background-pic.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 .other_recipes{
   background: url('../public/images/other-recipes-pic.jpg');
+  background-repeat: no-repeat;
   margin: auto;
   border-radius: 10px;
   background-position: center;
   padding: 6em;
-  background-color: red;
   width: 50%;
+}
+.new_table_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+.new_table_div div{
+  display: flex;
+  gap: .5em;
+}
+.span,.a_span{
+  color: red;
+  font-size: 18px;
+}
+.a{
+  color: red;
+  text-decoration: none;
+}
+.our_table_recipes{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 2.5em;
+  column-gap: 5rem;
+  margin: auto;
+  margin-bottom: 3em;
+  width: 60%;
 }
