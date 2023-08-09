@@ -1,0 +1,19 @@
+
+.title,.details{
+    color:white;
+}
+.details{
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.title{
+    font-family: 'Merriweather';
+    font-size: 19px;
+    margin: 0;
+}
+.section{
+    width: 250px;
+}
+.img{
+    margin-block: 1rem;
+}

@@ -4,6 +4,7 @@ import Hero from './components/Hero/hero';
 import Button from './components/Button/button';
 import TitleLayout from './components/TitleLayout/titlelayout';
 import HomeFoodCard from './components/Home_foodcard/home_foodcard';
+import ProductLayout from './components/ProductLayout/productlayout';
 
 function App() {
   const recipes = [
@@ -15,6 +16,12 @@ function App() {
     {id:5, img:'./images/rice-pic.jpg', title:'Thailand rice food'},
   ]
   
+  const products = [
+    {img:'./images/star-icon.png',title:'Betheme Star'},
+    {img:'./images/food-icon.png',title:'World food'},
+    {img:'./images/spices-icon.png',title:'Aromatic spices'},
+    {img:'./images/fish-icon.png',title:'Fresh Meat and Fish'}
+  ]
   return (
     <>
       <Nav/>
@@ -63,6 +70,17 @@ function App() {
             <Button type='dark' content='Read more'/>
             <Button type='light' content='Our catering'/>
           </div>
+        </div>
+        <div className={styles.bottom_section}>
+          {products.map(product =>{
+            return (
+              <ProductLayout 
+                img={product.img}
+                title={product.title}
+                details='Ut ultricies imperdiet sodales. Aliquam fringilla aliquam.'
+              />
+            )
+          })}
         </div>
       </section>
     </>

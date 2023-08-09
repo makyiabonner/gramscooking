@@ -10,7 +10,7 @@
   width: 100%;
   background-image: url('../public/images/background-pic.jpg');
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom left;
   padding-bottom: 9em;
 }
 .other_recipes{
@@ -18,7 +18,7 @@
   background-repeat: no-repeat;
   margin: auto;
   border-radius: 10px;
-  background-position: center;
+  background-position: center right;
   padding: 6em;
   width: 50%;
 }
@@ -52,6 +52,9 @@
 }
 .natural_products_section{
   background-image: url('../public/images/products&spices-bg.jpg');
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: black;
   padding-block: 8em;
 }
 .natural_products_section div:first-child{
@@ -64,4 +67,11 @@
   display: flex;
   margin-top: 30px;
   gap: 20px;
+}
+.bottom_section{
+  width: 60%;
+  margin: auto;
+  margin-top:4em;
+  display: flex;
+  gap: 4rem;
 }
