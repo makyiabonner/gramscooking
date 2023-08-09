@@ -11,6 +11,7 @@
   background-image: url('../public/images/background-pic.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
+  padding-bottom: 9em;
 }
 .other_recipes{
   background: url('../public/images/other-recipes-pic.jpg');

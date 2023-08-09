@@ -6,6 +6,15 @@ import TitleLayout from './components/TitleLayout/titlelayout';
 import HomeFoodCard from './components/Home_foodcard/home_foodcard';
 
 function App() {
+  const recipes = [
+    {id:0, img:'./images/spaghetti-pic.jpg', title:'Spaghetti with tomato sauce'},
+    {id:1, img:'./images/seafood-pic.jpg', title:'Seafood soup'},
+    {id:2, img:'./images/oriental-pic.jpg', title:'Oriental soup'},
+    {id:3, img:'./images/toast-pic.jpg', title:'Toast with cream and strawberries'},
+    {id:4, img:'./images/salad-pic.jpg', title:'Mixed chef’s salad'},
+    {id:5, img:'./images/rice-pic.jpg', title:'Thailand rice food'},
+  ]
+  
   return (
     <>
       <Nav/>
@@ -21,36 +30,16 @@ function App() {
           </div>
         </div>
         <div className={styles.our_table_recipes}>
-          <HomeFoodCard
-            img='./images/spaghetti-pic.jpg'
-            title='Spaghetti with tomato sauce'
-            context='Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie ultricies porta urna.'
-          />
-          <HomeFoodCard
-            img='./images/seafood-pic.jpg'
-            title='Seafood soup'
-            context='Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie ultricies porta urna.'
-          />
-          <HomeFoodCard
-            img='./images/oriental-pic.jpg'
-            title='Oriental soup'
-            context='Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie ultricies porta urna.'
-          />
-          <HomeFoodCard
-            img='./images/toast-pic.jpg'
-            title='Toast with cream and strawberries'
-            context='Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie ultricies porta urna.'
-          />
-          <HomeFoodCard
-            img='./images/salad-pic.jpg'
-            title='Mixed chef’s salad'
-            context='Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie ultricies porta urna.'
-          />
-          <HomeFoodCard
-            img='./images/rice-pic.jpg'
-            title='Thailand rice food'
-            context='Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie ultricies porta urna.'
-          />
+          {recipes.map(recipe => {
+            return (
+              <HomeFoodCard
+                key={recipe.id}
+                img={recipe.img}
+                title={recipe.title}
+                context='Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie ultricies porta urna.'
+              />
+            )
+          })}
         </div>
         <div className={styles.other_recipes}>
             <TitleLayout 
