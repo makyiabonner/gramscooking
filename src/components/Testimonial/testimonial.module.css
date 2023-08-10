@@ -1,0 +1,75 @@
+
+.section{
+    padding: 6em;
+    background-image: url('../../../public/images/testimonial-bg.jpg');
+    padding-bottom: 30em;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: rgb(241, 241, 241);
+}
+.div{
+    display: flex;
+    gap: 3em;
+    background-color: transparent;
+    width: 70%;
+    margin-inline: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+.div::-webkit-scrollbar{
+    display: none;
+}
+.content{
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content div{
+    width: 62.5vw;
+    text-align: center;
+    background-color: rgb(223, 223, 223);
+    margin-top: 1em;
+}
+.profile_comment{
+    text-decoration: underline rgba(0,0,0,.2);
+    font-size: 1.2em;
+    font-weight: 200;
+    color: black;
+    text-underline-offset: 5px;
+}
+.span{
+    color: red;
+    font-weight: bold;
+    font-size: 2em;
+}
+.title{
+    margin-inline: auto;
+    width: fit-content;
+    font-family: 'Merriweather';
+    font-size: 3em;
+}
+.profile_img{
+    height: 5em;
+    width:5em;
+    border-radius: 50%;
+}
+.four_button{
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+    width: fit-content;
+}
+.inactive,.active{
+    border-radius: 50%;
+    border: none;
+    height: 12px;
+    width: 12px;
+}
+.inactive{
+    background-color: rgb(206, 206, 206);
+}
+.active{
+    background-color: red;
+}

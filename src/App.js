@@ -5,6 +5,7 @@ import Button from './components/Button/button';
 import TitleLayout from './components/TitleLayout/titlelayout';
 import HomeFoodCard from './components/Home_foodcard/home_foodcard';
 import ProductLayout from './components/ProductLayout/productlayout';
+import Testimonial from './components/Testimonial/testimonial';
 
 function App() {
   const recipes = [
@@ -83,6 +84,7 @@ function App() {
           })}
         </div>
       </section>
+      <Testimonial/>
     </>
   );
 }
