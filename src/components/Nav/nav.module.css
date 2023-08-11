@@ -1,10 +1,15 @@
 @import '../../fonts.css';
 
 .nav{
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     padding-block: 14px;
-    padding-inline:450px;
+    padding-inline:clamp(10rem, 2vw, 30rem);
     background-color: rgba(0,0,0,.9);
 }
 .logo{
@@ -22,7 +27,7 @@
     height: 40px;
     width: 95px;
     padding-block: 5px;
-    background-color: rgb(50, 187, 50);
+    background-color: red;
     border: none;
     border-radius: 5px;
 }
@@ -37,4 +42,21 @@
     display: flex;
     align-items: center;
     gap: 40px;
+}
+.hamburger_menu{
+    display: none;
+    width: 40px;
+}
+@media (max-width: 1023px) {
+    .hamburger_menu{
+        display: block;
+    }
+    .nav_list{
+        display: none;
+    }
+}
+@media (max-width: 767px){
+    .btn{
+        display: none;
+    }
 }

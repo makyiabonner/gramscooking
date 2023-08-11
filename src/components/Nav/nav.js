@@ -1,4 +1,5 @@
-import styles from './nav.module.css'
+import styles from './nav.module.css';
+import menu from '../../icons/menu.svg'
 
 export default function Nav(){
     return (
@@ -13,7 +14,10 @@ export default function Nav(){
                         <li className={styles.list_item}>About us</li>
                         <li className={styles.list_item}>Catering</li>
                     </ul>
-                    <button className={styles.btn}>Buy now</button>
+                    <div className={styles.div}>
+                        <img src={menu} alt="" className={styles.hamburger_menu} />
+                        <button className={styles.btn}>Buy now</button>
+                    </div>
                 </div>
             </nav>
         </>
