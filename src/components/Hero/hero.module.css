@@ -1,7 +1,7 @@
 
 .container{
     background-image: url('/public/images/hero_bg.jpg');
-    background-position: right;
+    background-position: right top;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -9,7 +9,7 @@
     margin-inline: auto;
     background-color: transparent;
     padding-block: 150px;
-    width: 60%;
+    width: clamp(40rem, 60%, 100em);
 }
 .two_buttons{
     display: flex;

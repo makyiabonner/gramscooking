@@ -8,8 +8,8 @@
     left: 0;
     display: flex;
     justify-content: space-between;
-    padding-block: 14px;
-    padding-inline:clamp(10rem, 2vw, 30rem);
+    padding-block: clamp(3px , .9vh, 14px);
+    padding-inline:clamp(3rem, 4rem, 30rem);
     background-color: rgba(0,0,0,.9);
 }
 .logo{
