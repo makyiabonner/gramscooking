@@ -16,8 +16,9 @@
 .other_recipes{
   background: url('../public/images/other-recipes-pic.jpg');
   background-repeat: no-repeat;
-  margin: auto;
+  background-size: cover;
   border-radius: 10px;
+  margin: auto;
   background-position: center right;
   padding: 6em;
   width: 50%;
@@ -26,11 +27,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
   margin: auto;
+  width: 60%;
 }
 .new_table_div div{
-  display: flex;
+  display: block;
   gap: .5em;
 }
 .span,.a_span{
@@ -43,22 +44,22 @@
 }
 .our_table_recipes{
   display: grid;
-  grid-template-columns: repeat(1,1fr);
-  row-gap: 2.5em;
-  column-gap: 5rem;
   margin: auto;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 2.5em;
+  column-gap: 1em;
   margin-bottom: 3em;
-  width: 60%;
+  width: clamp(40rem, 60%, 100em);
 }
 .natural_products_section{
   background-image: url('../public/images/products&spices-bg.jpg');
-  background-position: top right;
+  background-position: top center;
   background-repeat: no-repeat;
   background-color: black;
   padding-block: 8em;
 }
 .natural_products_section div:first-child{
-  width: 60%;
+  width: clamp(40rem, 60%, 100em);
   padding-bottom: 6em;
   margin: auto;
   border-bottom:1px solid rgba(255,255,255,.2);
@@ -69,9 +70,42 @@
   gap: 20px;
 }
 .bottom_section{
-  width: 60%;
+  width: clamp(40rem, 60%, 100em);
   margin: auto;
   margin-top:4em;
   display: flex;
   gap: 4rem;
+}
+@media (max-width: 425px){
+  .our_table_recipes{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+@media (max-width:1024px) {
+  .other_recipes{
+    width: 60%;
+  }
+  .our_table_recipes{
+    grid-template-columns: repeat(3,1fr);
+    width: 90%;
+  }
+}
+@media (min-width:768px) and (max-width:1023px) {
+  .our_table_recipes{
+    grid-template-columns: repeat(2,1fr);
+    width: 80%;
+  }
+  .new_table_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+  }
+}
+@media (max-width:425px){
+  .our_table_recipes{
+    grid-template-columns: repeat(1,1fr);
+    width: 90%;
+  }
 }

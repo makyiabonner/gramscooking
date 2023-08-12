@@ -1,15 +1,13 @@
 
 .card{
-    width: 20rem;
+    width:auto;
 }
 .img_container{
     width: 100%;
-    height: 200px;
     overflow: hidden;
 }
 .food_img{
     width: 100%;
-    height: 200px;
     transition: .3s;
 }
 .food_img:hover{
