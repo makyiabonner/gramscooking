@@ -17,18 +17,19 @@
   background: url('../public/images/other-recipes-pic.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
   border-radius: 10px;
   margin: auto;
   background-position: center right;
   padding: 6em;
-  width: 50%;
+  width: clamp(40rem, 80vw, 70em);
 }
 .new_table_div{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  width: 60%;
+  width: clamp(40rem, 80vw, 70em);
 }
 .new_table_div div{
   display: block;
@@ -36,7 +37,7 @@
 }
 .span,.a_span{
   color: red;
-  font-size: 18px;
+  font-size: .8rem;
 }
 .a{
   color: red;
@@ -49,7 +50,7 @@
   row-gap: 2.5em;
   column-gap: 1em;
   margin-bottom: 3em;
-  width: clamp(40rem, 60%, 100em);
+  width: clamp(40rem, 80vw, 70em);
 }
 .natural_products_section{
   background-image: url('../public/images/products&spices-bg.jpg');
@@ -59,7 +60,8 @@
   padding-block: 8em;
 }
 .natural_products_section div:first-child{
-  width: clamp(40rem, 60%, 100em);
+  width: clamp(18rem,80vw,70rem);
+  padding: 1em;
   padding-bottom: 6em;
   margin: auto;
   border-bottom:1px solid rgba(255,255,255,.2);
@@ -70,26 +72,24 @@
   gap: 20px;
 }
 .bottom_section{
-  width: clamp(40rem, 60%, 100em);
+  width: clamp(10rem, 80vw, 70em);
   margin: auto;
   margin-top:4em;
   display: flex;
   gap: 4rem;
 }
-@media (max-width: 425px){
+@media (min-width:426px) and (max-width:767px) {
   .our_table_recipes{
     grid-template-columns: repeat(1,1fr);
+    width: 80%;
+  }
+  .new_table_div{
+    display: block;
+    width: fit-content;
+    margin-block: 3em;
   }
 }
-@media (max-width:1024px) {
-  .other_recipes{
-    width: 60%;
-  }
-  .our_table_recipes{
-    grid-template-columns: repeat(3,1fr);
-    width: 90%;
-  }
-}
+
 @media (min-width:768px) and (max-width:1023px) {
   .our_table_recipes{
     grid-template-columns: repeat(2,1fr);
@@ -104,8 +104,33 @@
   }
 }
 @media (max-width:425px){
+  .new_table_div{
+    display: block;
+    width: fit-content;
+    margin-block: 3em;
+  }
   .our_table_recipes{
     grid-template-columns: repeat(1,1fr);
     width: 90%;
+  }
+  .other_recipes{
+    width: fit-content;
+    padding: 4rem .6rem;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .two_buttons{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .bottom_section{
+    width: 90%;
+    margin: auto;
+    margin-top:4em;
+    display: block;
+    gap: 4rem;
   }
 }

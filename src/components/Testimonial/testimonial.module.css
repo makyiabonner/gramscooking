@@ -1,8 +1,8 @@
 
 .section{
-    padding: 6em;
+    padding: clamp(3em,2vw,6em);
     background-image: url('../../../public/images/testimonial-bg.jpg');
-    padding-bottom: 30em;
+    padding-bottom: clamp(21em,3vw,30em);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-color: rgb(241, 241, 241);
@@ -50,7 +50,7 @@
     margin-inline: auto;
     width: fit-content;
     font-family: 'Merriweather';
-    font-size: 3em;
+    font-size: clamp(2em,2vw,3em);
 }
 .profile_img{
     height: 5em;

@@ -3,14 +3,15 @@
 .nav{
     box-sizing: border-box;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 9999;
     top: 0;
     left: 0;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding-block: clamp(3px , .9vh, 14px);
-    padding-inline:clamp(3rem, 4rem, 30rem);
+    padding-block: clamp(1.5rem , .9vh, 14px);
+    padding-inline:clamp(1rem, 8vw, 40rem);
     background-color: rgba(0,0,0,.9);
 }
 .logo{
@@ -25,19 +26,18 @@
 }
 .btn{
     color: white;
-    height: 40px;
-    width: 95px;
-    padding-block: 5px;
+    padding: .5em 1em;
     background-color: red;
     border: none;
     border-radius: 5px;
 }
 .list_item,.btn{
     font-family: 'Poppins';
+    font-size: 1.1rem;
 }
 .list_item{
     color: rgb(190, 190, 190);
-    font-size: 14px;
+    font-size: 1.1rem;
 }
 .div{
     display: flex;

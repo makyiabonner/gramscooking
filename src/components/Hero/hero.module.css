@@ -3,15 +3,17 @@
     background-image: url('/public/images/hero_bg.jpg');
     background-position: center top;
     background-repeat: no-repeat;
+    
 }
 .div{
-    margin-inline: auto;
     background-color: transparent;
     padding-block: clamp(10rem,2vw, 13rem);
-    width: clamp(40rem, 60%, 100em);
+    margin: auto;
+    width: clamp(18rem, 80vw, 70em);
 }
 .two_buttons{
     display: flex;
+    width: fit-content;
     margin-top: 30px;
     gap: 20px;
 }
@@ -20,3 +22,12 @@
         background-position: top right;
     }
 }
+@media (max-width:425px){
+    .two_buttons{
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      margin-top: 30px;
+      gap: 20px;
+    }
+  }

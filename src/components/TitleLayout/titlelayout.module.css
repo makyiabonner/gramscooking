@@ -1,5 +1,6 @@
-.span,.title,.details{
+.span,.title_light,.title_dark,.details{
     width: fit-content;
+    margin: 0;
 }
 .span{
     font-family:'Poppins';
@@ -10,7 +11,7 @@
 .title_light,.title_dark{
     font-family: 'Merriweather';
     font-weight: bolder;
-    font-size: 40px;
+    font-size: clamp(1.8rem,3vw,3.5rem);
     margin-block: 25px;
 }
 .title_light,.details_light{
@@ -18,6 +19,6 @@
 }
 .details_light,.details_dark{
     font-weight: 300;
-    width: 500px;
+    width: clamp(18rem,50vw,30rem);
     line-height: 25px;
 }
