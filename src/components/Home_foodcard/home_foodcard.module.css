@@ -2,6 +2,9 @@
 .card{
     width:auto;
 }
+.textarea{
+    margin-left: 10px;
+}
 .img_container{
     width: 100%;
     overflow: hidden;

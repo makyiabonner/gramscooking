@@ -104,6 +104,9 @@
   }
 }
 @media (max-width:425px){
+  .section{
+    background-position: bottom;
+  }
   .new_table_div{
     display: block;
     width: fit-content;

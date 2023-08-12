@@ -10,19 +10,25 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block: clamp(1.5rem , .9vh, 14px);
-    padding-inline:clamp(1rem, 8vw, 40rem);
-    background-color: rgba(0,0,0,.9);
+    padding-block: clamp(.8rem , .9vh, 14px);
+    background-color: rgba(0,0,0);
+}
+.nav section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: clamp(18rem, 80vw, 70em);
 }
 .logo{
     background-color: white;
-    height: 30px;
-    width: 90px;
+    height: 100%;
+    width: 12em;
 }
 .nav_list{
     display: flex;
     list-style: none;
-    gap: 40px;
+    gap: 2rem;
 }
 .btn{
     color: white;
@@ -37,7 +43,7 @@
 }
 .list_item{
     color: rgb(190, 190, 190);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .div{
     display: flex;
@@ -60,4 +66,53 @@
     .btn{
         display: none;
     }
+}
+.mobile_menu{
+    position: fixed;
+    z-index: 10000;
+    background-color: black;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 80vw;
+}
+.mobile_close_div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .6em .8em;
+}
+.close_button{
+    background-color: transparent;
+    border: none;
+}
+.close_button_icon{
+    width: 2em;
+}
+.mobile_buy_div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-block: .3em;
+}
+.mobile_buy_btn{
+    width: 16em;
+    padding-block: .8em;
+    background-color: red;
+    border: none;
+    border-radius: .3rem;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bolder;
+}
+.mobile_list{
+    list-style: none;
+    padding: 0;
+}
+.mobile_list_item{
+    color: white;
+    font-family: 'Poppins';
+    font-size: .8rem;
+    padding: .6rem 1rem;
+    border-block:.1px solid rgba(255,255,255,.1);
 }
