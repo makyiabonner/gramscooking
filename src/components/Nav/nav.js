@@ -3,6 +3,8 @@ import menu from '../../icons/menu.svg';
 import close from '../../icons/close-button.svg';
 import logo from '../../icons/logo.svg';
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Nav(){
     const [isActive, setIsActive ] = useState(false)
@@ -43,9 +45,9 @@ export default function Nav(){
                     <li className={styles.mobile_list_item}>Catering</li>
                 </ul>
                 <ul className={styles.social_media_div}>
-                    <li><a className={styles.social_media_logo}></a></li>
-                    <li><a className={styles.social_media_logo}></a></li>
-                    <li><a className={styles.social_media_logo}></a></li>
+                    <li><a className={styles.social_media_logo}><FontAwesomeIcon icon={faFacebook} /></a></li>
+                    <li><a className={styles.social_media_logo}><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li><a className={styles.social_media_logo}><FontAwesomeIcon icon={faInstagram} /></a></li>
                 </ul>
             </section>
         </>
