@@ -69,7 +69,7 @@
     border-radius: 50%;
     border: none;
     height: 1em;
-    width: 1em;
+    width: .5em;
 }
 .inactive{
     background-color: rgb(206, 206, 206);
