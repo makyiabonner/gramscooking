@@ -22,7 +22,7 @@
         background-position: top right;
     }
 }
-@media (max-width:425px){
+@media (max-width:467px){
     .two_buttons{
       display: flex;
       flex-direction: column;
