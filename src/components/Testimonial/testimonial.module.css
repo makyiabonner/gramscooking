@@ -68,8 +68,8 @@
     box-sizing: border-box;
     border-radius: 50%;
     border: none;
-    height: 1em;
-    width: 1em;
+    height: 1.2em;
+    width: 1.2em;
     
 }
 .inactive{
@@ -83,8 +83,8 @@
 }
 .active:after{
     content: '';
-    height: 1em;
-    width: 1em;
+    height: 1.2em;
+    width: 1.2em;
     background-color: red;
     bottom: 3px;
     left: 0;
