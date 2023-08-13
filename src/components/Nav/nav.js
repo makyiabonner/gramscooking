@@ -48,9 +48,9 @@ export default function Nav(){
                     <li className={styles.mobile_list_item}>Catering</li>
                 </ul>
                 <ul className={styles.social_media_div}>
-                    <li><a className={styles.social_media_logo}><FontAwesomeIcon icon={faFacebook} /></a></li>
-                    <li><a className={styles.social_media_logo}><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li><a className={styles.social_media_logo}><FontAwesomeIcon icon={faInstagram} /></a></li>
+                    <li><a href='/' className={styles.social_media_logo}><FontAwesomeIcon style={{color:'rgba(255,255,255,.7)'}} icon={faFacebook} /></a></li>
+                    <li><a href='/' className={styles.social_media_logo}><FontAwesomeIcon style={{color:'rgba(255,255,255,.7)'}} icon={faTwitter} /></a></li>
+                    <li><a href='/' className={styles.social_media_logo}><FontAwesomeIcon style={{color:'rgba(255,255,255,.7)'}} icon={faInstagram} /></a></li>
                 </ul>
             </section>
         </>

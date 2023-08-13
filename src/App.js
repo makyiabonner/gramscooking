@@ -32,7 +32,7 @@ function App() {
           <h2 className={styles.subtitle_light}>Whats new on our table</h2>
           <div>
             <span className={styles.span}>Do you want to see more? </span>
-            <a href="" className={styles.a}>
+            <a href="/" className={styles.a}>
               <span className={styles.a_span}>Show all recipes</span>
             </a>
           </div>
