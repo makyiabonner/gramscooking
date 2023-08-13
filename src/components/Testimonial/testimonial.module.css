@@ -59,11 +59,13 @@
 }
 .four_button{
     display: flex;
-    gap: 1em;
+    gap: 1rem;
+    box-sizing: border-box;
     margin: auto;
-    width: 6em;
+    width: fit-content;
 }
 .inactive,.active{
+    box-sizing: border-box;
     border-radius: 50%;
     border: none;
     height: 1em;
