@@ -73,8 +73,6 @@
     background-color: black;
     top: 0;
     right: 0;
-    height: 100%;
-    width: 80vw;
 }
 .mobile_close_div{
     display: flex;
@@ -96,8 +94,7 @@
     padding-block: .3em;
 }
 .mobile_buy_btn{
-    width: 16em;
-    padding-block: .8em;
+    padding: .8em 6em;
     background-color: red;
     border: none;
     border-radius: .3rem;
@@ -125,4 +122,21 @@
     padding: .8rem 0;
     gap: .8em;
     list-style-type: none;
+}
+.ham_btn{
+    background-color: transparent;
+    border: none;
+}
+.close {
+    height: 100%;
+    opacity: 0;
+    width: 0vw;
+    transition: all .2s linear;
+
+}
+.open{
+    opacity: 1;
+    height: 100%;
+    width: 80vw;
+    transition: all .2s linear;
 }

@@ -7,7 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 export default function Nav(){
-    const [isActive, setIsActive ] = useState(false)
+    const [isActive, setIsActive ] = useState(false);
+    const toggleActive = () => setIsActive(!isActive);
     return (
         <>
             <nav className={styles.nav}>
@@ -22,15 +23,17 @@ export default function Nav(){
                             <li className={styles.list_item}>Catering</li>
                         </ul>
                         <div className={styles.div}>
-                            <img src={menu} alt="" className={styles.hamburger_menu} />
+                            <button className={styles.ham_btn} onClick={toggleActive} >
+                                <img src={menu} alt="" className={styles.hamburger_menu} />
+                            </button>
                             <button className={styles.btn}>Buy now</button>
                         </div>
                     </div>
                 </section>
             </nav>
-            <section className={styles.mobile_menu}>
+            <section className={`${styles.mobile_menu} ${isActive ? styles.open : styles.close}`}>
                 <div className={styles.mobile_close_div}>
-                    <button className={styles.close_button}>
+                    <button onClick={toggleActive} className={styles.close_button}>
                         <img src={close} alt='close button' className={styles.close_button_icon}/>
                     </button>
                 </div>
