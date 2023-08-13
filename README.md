@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aac01618-eb0b-4ad5-99b3-3581e6ef0ccc/deploy-status)](https://app.netlify.com/sites/gramscooking/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
