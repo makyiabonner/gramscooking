@@ -5,7 +5,21 @@
     box-sizing: border-box;
     border-radius: 8px;
     border: none;
+    position: relative;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5) inset;
+}
+.red_button:before,.light_button::before{
+    content: '';
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .2);
+    height: 100%;
+    width: 0;
+    z-index: 10000;
+    position: absolute;
+}
+.red_button:hover::before,.light_button:hover::before{
+    width: 100%;
+    transition: width .2s linear;
 }
 .red_arrow,.light_arrow{
     background-color: rgba(0, 0, 0, 0.2);
