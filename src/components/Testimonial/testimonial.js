@@ -4,10 +4,10 @@ import styles from './testimonial.module.css';
 export default function Testimonial() {
     const [activeButtons, setActiveButtons] = useState([false, false, false, false]);
     const people = [
-        { img: './images/testimonial-1-lg-pic.jpg', comment: 'Nisi deserunt repellat similique ratione quasi accusantium possimus pariatur quos.', name: 'Katarina Johnes' },
-        { img: './images/testimonial-2-lg-pic.jpg', comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', name: 'Brandon Ross' },
-        { img: './images/testimonial-3-lg-pic.jpg', comment: 'Praesentium itaque soluta aliquam odit.', name: 'Jennifer Lee' },
-        { img: './images/testimonial-4-lg-pic.jpg', comment: 'Excepturi libero distinctio reprehenderit minus assumenda unde.', name: 'Tony Johnson' }
+        { img: './images/testimonial-1-lg-pic.jpg', comment: `The Thai rice food journeyed me through the vibrant streets of Thailand, each bite a passport to its authentic and savory delights.`, name: 'Katarina Johnes' },
+        { img: './images/testimonial-2-lg-pic.jpg', comment: `The seafood soup was a tidal wave of succulent flavors, each spoonful a voyage into the ocean's embrace.`, name: 'Brandon Ross' },
+        { img: './images/testimonial-3-lg-pic.jpg', comment: `The oriental soup transported me to distant lands with its aromatic spices and captivating essence.`, name: 'Jennifer Lee' },
+        { img: './images/testimonial-4-lg-pic.jpg', comment: `The mixed chef's salad was an orchestra of textures and tastes, a harmonious celebration of freshness on every plate.`, name: 'Tony Johnson' }
     ];
 
     const personRefs = useRef([]);

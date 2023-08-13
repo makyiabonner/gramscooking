@@ -11,7 +11,7 @@ export default function Hero(){
                     span_content='WELCOME' 
                     title_content1='Easy recipes' 
                     title_content2=' for any occasion'
-                    details='Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim. Duis fermentum faucibus est.'/>
+                    details='Whip up delicious dishes effortlessly for any occasion with these easy recipes. From quick weeknight dinners to impressive party appetizers, these recipes are designed to simplify your cooking experience while delivering amazing flavors.'/>
                 <div className={styles.two_buttons}>
                     <Button type='dark' content='About Us'/>
                     <Button type='light' content='Our Catering'/>
