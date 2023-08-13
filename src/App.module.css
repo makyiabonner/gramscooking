@@ -103,7 +103,7 @@
     width: 80%;
   }
 }
-@media (max-width:425px){
+@media (max-width:467px){
   .section{
     background-position: bottom;
   }
