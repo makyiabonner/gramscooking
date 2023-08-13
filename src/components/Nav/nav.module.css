@@ -22,6 +22,7 @@
 }
 .logo{
     background-color: white;
+    border: 2px solid black;
     height: 100%;
     width: 12em;
 }
@@ -143,4 +144,11 @@
     height: 100%;
     width: 80vw;
     transition: all .2s linear;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+    align-self: center;
 }

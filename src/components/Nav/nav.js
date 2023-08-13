@@ -38,7 +38,7 @@ export default function Nav(){
                     </button>
                 </div>
                 <div className={styles.mobile_buy_div}>
-                    <button className={styles.mobile_buy_btn}>Buy now</button>
+                    <button className={`${styles.mobile_buy_btn} ${isActive ? styles.show: styles.hide}`}>Buy now</button>
                 </div>
                 <ul className={styles.mobile_list}>
                     <li className={styles.mobile_list_item}>Home</li>
