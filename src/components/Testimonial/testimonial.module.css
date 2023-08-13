@@ -59,9 +59,9 @@
 }
 .four_button{
     display: flex;
-    gap: 1rem;
+    gap: 1em;
     margin: auto;
-    width: fit-content;
+    width: 6em;
 }
 .inactive,.active{
     border-radius: 50%;
