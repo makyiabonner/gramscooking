@@ -66,8 +66,8 @@
 .inactive,.active{
     border-radius: 50%;
     border: none;
-    height: 12px;
-    width: 12px;
+    height: 1em;
+    width: 1em;
 }
 .inactive{
     background-color: rgb(206, 206, 206);
@@ -80,8 +80,8 @@
 }
 .active:after{
     content: '';
-    height: 12px;
-    width: 12px;
+    height: 1em;
+    width: 1em;
     background-color: red;
     bottom: 3px;
     left: 0;
