@@ -3,7 +3,9 @@ import styles from '../Home_foodcard/home_foodcard.module.css';
 
 export default function HomeFoodCard(props) {
     const [isActive, setIsActive] = useState(false);
-
+    const currentDate = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const fullDate = currentDate.toLocaleDateString('en-US', options);
     return (
         <div className={styles.card}>
                 <div className={styles.img_container}>
@@ -19,7 +21,7 @@ export default function HomeFoodCard(props) {
                         <svg className={styles.time} xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="25">
                             <path d="m627-287 45-45-159-160v-201h-60v225l174 181ZM480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-82 31.5-155t86-127.5Q252-817 325-848.5T480-880q82 0 155 31.5t127.5 86Q817-708 848.5-635T880-480q0 82-31.5 155t-86 127.5Q708-143 635-111.5T480-80Zm0-400Zm0 340q140 0 240-100t100-240q0-140-100-240T480-820q-140 0-240 100T140-480q0 140 100 240t240 100Z"/>
                         </svg>
-                        <span className={styles.span}>date</span>
+                        <span className={styles.span}>{fullDate}</span>
                     </div>
                     <h4 className={styles.h4}>{props.title}</h4>
                     <p className={styles.p}>{props.context}</p>
@@ -32,7 +34,7 @@ export default function HomeFoodCard(props) {
                         <svg className={styles.like} xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="25">
                             <path d="m480-121-41-37q-105.768-97.121-174.884-167.561Q195-396 154-451.5T96.5-552Q80-597 80-643q0-90.155 60.5-150.577Q201-854 290-854q57 0 105.5 27t84.5 78q42-54 89-79.5T670-854q89 0 149.5 60.423Q880-733.155 880-643q0 46-16.5 91T806-451.5Q765-396 695.884-325.561 626.768-255.121 521-158l-41 37Zm0-79q101.236-92.995 166.618-159.498Q712-426 750.5-476t54-89.135q15.5-39.136 15.5-77.72Q820-709 778-751.5T670.225-794q-51.524 0-95.375 31.5Q531-731 504-674h-49q-26-56-69.85-88-43.851-32-95.375-32Q224-794 182-751.5t-42 108.816Q140-604 155.5-564.5t54 90Q248-424 314-358t166 158Zm0-297Z"/>
                         </svg>
-                        <span className={styles.like_span}>97</span>
+                        <span className={styles.like_span}>{isActive? `98` : `97`}</span>
                     </button>
                     <div
                         className={styles.readme}
